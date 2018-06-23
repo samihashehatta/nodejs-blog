@@ -1,0 +1,14 @@
+<% include partial/top.ejs %>
+<div class="ui main text container segment">
+    <div class="ui huge header"> <%= foundBlog.title %> </div>
+    <img class="ui centered medium image" src="<%= foundBlog.image %>">
+    <h5> <%- foundBlog.body %> </h5>
+    <p> <%= foundBlog.created.toDateString() %> </p>
+    <a class="ui floated basic orange button inn" style="display: inline-block;"href="/blogs/<%= foundBlog._id %>/edit">
+    Edit
+</a>
+    <form action="/blogs/<%= foundBlog._id %>?_method=DELETE" method="POST" style="display: inline-block;" >
+        <button class="ui floated basic red button " style="display: inline-block;">remove</button>
+    </form>
+    </div>
+<% include partial/footer.ejs %>

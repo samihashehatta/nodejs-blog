@@ -1,0 +1,25 @@
+body
+{
+   text-transform: capitalize;
+   
+}
+.ui 
+{
+    padding:10px;
+    border-radius:0px;
+    
+    
+}
+.ui .item
+{
+    text-transform: capitalize;
+    background-color: red
+}
+.ui .terminal
+{
+    font-size: 20px;
+}
+.inn
+{
+    
+}
